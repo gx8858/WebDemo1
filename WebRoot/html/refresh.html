@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="5;url=/test/html/success.html">
+<title>刷新</title>
+<script type="text/javascript">
+    var count = 5;
+    function run(){
+        document.getElementById("spanId").innerHTML = count;
+        setInterval(function(){
+            count --;
+            document.getElementById("spanId").innerHTML = count;
+        },1000);
+         
+        // 或
+        // document.getElementById("spanId").innerHTML = count;
+        // count --;
+        // setTimeout("run()",1000);
+    }
+</script>
+</head>
+<body onload="run()">
+    <h3>页面将在<span id="spanId"></span>秒后跳转</h3>
+</body>
+</html>
