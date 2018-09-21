@@ -55,4 +55,13 @@
     <url-pattern>/cep</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <servlet-name>OutServlet</servlet-name>
+    <servlet-class>cn.itcast.response.OutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OutServlet</servlet-name>
+    <url-pattern>/out</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
