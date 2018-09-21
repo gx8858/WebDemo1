@@ -22,9 +22,9 @@ public class CEPServlet extends HttpServlet {
 		resp.setHeader("Pragma", "no-cache");
 		// 第三个头是日期类型
 		resp.setDateHeader("Expires", -1);
+		
 		// 想让数据发生变化
 		// 向页面输出当前时间
-		
 		Date date = new Date();
 		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
 		String dateStr = format.format(date);
