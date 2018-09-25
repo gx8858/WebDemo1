@@ -28,7 +28,12 @@ public class LoginServlet extends HttpServlet {
             // µÇÂ¼³É¹¦
 //          resp.setStatus(302);
 //          resp.setHeader("location", "/test/html/success.html");
-            resp.sendRedirect("/test/html/success.html");
+        	// »ò
+//            resp.sendRedirect("/test/html/success.html");
+            
+            String path = req.getContextPath();
+            System.out.println(path);   // Êä³ö£º/test
+            resp.sendRedirect(path + "/html/success.html");
         } else {
             // µÇÂ¼Ê§°Ü
 //          resp.setStatus(302);
