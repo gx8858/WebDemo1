@@ -27,11 +27,11 @@ public class DownloadServlet extends HttpServlet {
 		 * 	3.读写
 		 */
 		// 设置头信息，附件的形式打开该文件
-		resp.setHeader("Content-Disposition", "attachment;filename=girl7.jpg");
+		resp.setHeader("Content-Disposition", "attachment;filename=car.jpg");
 		
 		// 通过程序获取文件的绝对磁盘路径
-		String path = getServletContext().getRealPath("/img/girl7.jpg");
-		// System.out.println(path);
+		String path = getServletContext().getRealPath("/img/car.jpg");
+		 System.out.println(path);
 		// 获取img图片下的文件的路径
 		InputStream in = new FileInputStream(path);
 		// 向客户端输出
