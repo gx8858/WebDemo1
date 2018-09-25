@@ -73,4 +73,22 @@
     <url-pattern>/download</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <servlet-name>CheckcodeDemo</servlet-name>
+    <servlet-class>cn.itcast.response.CheckcodeDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckcodeDemo</servlet-name>
+    <url-pattern>/checkcode1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CheckcodeServlet</servlet-name>
+    <servlet-class>cn.itcast.response.CheckcodeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckcodeServlet</servlet-name>
+    <url-pattern>/checkcode2</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
