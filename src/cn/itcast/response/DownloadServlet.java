@@ -31,7 +31,7 @@ public class DownloadServlet extends HttpServlet {
 		
 		// 通过程序获取文件的绝对磁盘路径
 		String path = getServletContext().getRealPath("/img/car.jpg");
-		 System.out.println(path);
+//		System.out.println(path);
 		// 获取img图片下的文件的路径
 		InputStream in = new FileInputStream(path);
 		// 向客户端输出
