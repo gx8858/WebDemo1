@@ -109,4 +109,22 @@
     <url-pattern>/reg</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <servlet-name>ForwardServlet</servlet-name>
+    <servlet-class>cn.itcast.request.ForwardServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ForwardServlet</servlet-name>
+    <url-pattern>/forward</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ForwardToServlet</servlet-name>
+    <servlet-class>cn.itcast.request.ForwardToServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ForwardToServlet</servlet-name>
+    <url-pattern>/forwardTo</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
