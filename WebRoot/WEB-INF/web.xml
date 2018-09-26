@@ -100,4 +100,13 @@
     <url-pattern>/header</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <servlet-name>RegServlet</servlet-name>
+    <servlet-class>cn.itcast.request.RegServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegServlet</servlet-name>
+    <url-pattern>/reg</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
