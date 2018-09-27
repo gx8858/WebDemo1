@@ -11,7 +11,7 @@ public class ServletDemo1 extends HttpServlet {
      
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("我么钱，请转向demo2");
+        System.out.println("please redirect to demo2");
         resp.setStatus(302);
         resp.setHeader("location", "/test/demo2");
     }

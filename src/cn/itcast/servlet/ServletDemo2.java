@@ -11,7 +11,7 @@ public class ServletDemo2 extends HttpServlet {
      
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("Ìø×ªµ½demo2ÁË");
+        System.out.println("you find demo2");
     }
      
     @Override
