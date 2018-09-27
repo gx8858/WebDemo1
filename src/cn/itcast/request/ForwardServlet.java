@@ -25,7 +25,7 @@ public class ForwardServlet extends HttpServlet {
 		// 向request域中存入点值(转发可以使用request域对象传值)
 		req.setAttribute("msg", "小凤");
 		// 重定向的操作
-		// response.sendRedirect("/test/forwardTo");
+		// resp.sendRedirect("/test/forwardTo");
 		
 		// 一访问forward的话，使用转发的代码，转发到forwardTo中
 		
