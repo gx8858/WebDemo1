@@ -19,7 +19,6 @@ public class RefreshServlet extends HttpServlet {
         resp.getWriter().print("5秒后跳转");
         // 设置头信息（客户端绝对路径）
         resp.setHeader("refresh", "5;url=/test/html/success.html");
-         
     }
      
     @Override
