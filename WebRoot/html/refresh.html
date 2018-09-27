@@ -6,13 +6,14 @@
 <title>刷新</title>
 <script type="text/javascript">
     var count = 5;
+    
     function run(){
         document.getElementById("spanId").innerHTML = count;
         setInterval(function(){
             count --;
             document.getElementById("spanId").innerHTML = count;
         },1000);
-         
+        
         // 或
         // document.getElementById("spanId").innerHTML = count;
         // count --;
