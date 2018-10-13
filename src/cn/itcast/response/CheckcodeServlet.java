@@ -70,6 +70,7 @@ public class CheckcodeServlet extends HttpServlet {
 		// 设置字体
 		g.setFont(new Font("隶书", Font.BOLD, 20));
 		// 随机获取4个字符
+		String msg = "";
 		int x = 20;
 		int y = 20;
 		for (int i = 0; i < 4; i++) {
@@ -87,13 +88,17 @@ public class CheckcodeServlet extends HttpServlet {
 			g.rotate(hudu, x, y);
 			
 			int index = random.nextInt(words.length());
-			char ch = words.charAt(index);
+			String content = String.valueOf(words.charAt(index));
+			msg += content;
 			// 画到画布上去
-			g.drawString(ch + "", x, y);
+			g.drawString(content, x, y);
 			
 			g.rotate(-hudu, x, y);
 			x += 20;
 		}
+		
+		request.getSession().setAttribute("imageCode", msg);
+		System.out.println(msg);
 		
 		// 画干扰线
 		g.setColor(Color.GREEN);
